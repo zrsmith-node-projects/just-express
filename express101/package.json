@@ -5,7 +5,8 @@
   "main": "expressServer.js",
   "scripts": {
     "node": "nodemon nodeServer.js",
-    "express": "nodemon expressServer.js"
+    "express": "nodemon expressServer.js",
+    "exr": "nodemon expressRouter.js"
   },
   "author": "",
   "license": "ISC",

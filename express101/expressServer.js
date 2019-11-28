@@ -1,3 +1,5 @@
-setInterval(() => {
-  console.log("1 second");
-}, 1000);
+const express = require("express");
+
+// setInterval(() => {
+//   console.log("1 second");
+// }, 1000);

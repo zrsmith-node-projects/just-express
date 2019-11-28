@@ -4,11 +4,15 @@
   "description": "",
   "main": "expressServer.js",
   "scripts": {
-    "node": "nodemon nodeServer.js"
+    "node": "nodemon nodeServer.js",
+    "express": "nodemon expressServer.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }

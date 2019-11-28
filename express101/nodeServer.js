@@ -11,6 +11,16 @@ const server = http.createServer((req, res) => {
     const homePageHTML = fs.readFileSync("node.html");
     res.write(homePageHTML);
     res.end();
+  } else if (req.url === "/node.png") {
+    res.writeHead(200, { "content-type": "image/png" });
+    const nodeImage = fs.readFileSync("node.png");
+    res.write(nodeImage);
+    res.end();
+  } else if (req.url === "/styles.css") {
+    res.writeHead(200, { "content-type": "text/css" });
+    const cssFile = fs.readFileSync("styles.css");
+    res.write(cssFile);
+    res.end();
   } else {
     res.writeHead(404, { "content-type": "text/html" });
     res.write(

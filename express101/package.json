@@ -6,7 +6,8 @@
   "scripts": {
     "node": "nodemon nodeServer.js",
     "express": "nodemon expressServer.js",
-    "exr": "nodemon expressRouter.js"
+    "exr": "nodemon expressRouting.js",
+    "static": "nodemon staticFiles.js"
   },
   "author": "",
   "license": "ISC",

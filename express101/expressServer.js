@@ -10,7 +10,7 @@ server.all("*", (req, res) => {
 const PORT = 3333;
 
 server.listen(PORT, () => {
-  console.log(`\n *** Server is listening on port ${PORT} ***\n`);
+  console.log(`\n *** Server is listening on port ${PORT}!! ***\n`);
 });
 
 // setInterval(() => {

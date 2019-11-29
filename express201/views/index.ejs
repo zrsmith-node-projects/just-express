@@ -1,3 +1,5 @@
-<% for(let i = 0;i < 12; i++) { %>
-<li>TEST</li>
-<% } %>
+<h1><%= locals.msg %></h1>
+<!-- do not need locals.msg, can use msg, validated -->
+<h3><%= locals.validated %></h3>
+<!--  <%= means to print to the page, use <%- to escape data to print  -->
+<p><%- html %></p>

@@ -11,8 +11,17 @@ server.use(express.urlencoded());
 server.set("view engine", "ejs");
 server.set("views", path.join(__dirname, "views"));
 
+function validateUser(req, res, next) {
+  res.locals.validated = true;
+  next();
+}
+
+server.use(validateUser);
 server.get("/", (req, res) => {
-  res.render("index");
+  res.render("index", {
+    msg: "Success",
+    html: `<p>Some stuf</p>`
+  });
 });
 
 const PORT = 3333;

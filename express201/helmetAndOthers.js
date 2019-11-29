@@ -1,13 +1,15 @@
 const express = require("express");
+const helmet = require("helmet");
 const server = express();
 
+server.use(helmet());
 server.use(express.static("public"));
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
 
 server.post("/ajax", (req, res) => {
   console.log(req.body);
-  res.send("Test!");
+  res.json("Test!");
 });
 
 const PORT = 3333;

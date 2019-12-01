@@ -22,6 +22,10 @@ server.get("/login", (req, res) => {
   res.render("login");
 });
 
+server.post("/process_login", (req, res) => {
+  res.status(200).json(req.body);
+});
+
 const PORT = 3333;
 server.listen(PORT, () => {
   console.log(`\n *** Server is listening on port ${PORT} *** \n`);
